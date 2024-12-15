@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "hexlet-3"
+version = "0.1.0"
+description = ""
+authors = ["Elena Vedeneva <astroshelest@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12"
+fastapi = "^0.115.6"
+uvicorn = {extras = ["standart"], version = "^0.33.0"}
+pydantic = {extras = ["email"], version = "^2.10.3"}
+pydantic-settings = "^2.7.0"
+dishka = "^1.4.2"
+environs = "^11.2.1"
+asyncpg = "^0.30.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.36"}
+alembic = "^1.14.0"
+pandas = "^2.2.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.8.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
